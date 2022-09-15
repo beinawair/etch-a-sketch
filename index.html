@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Etch-a-Sketch</div>
+        <div class="wrapper">
+            <div class="set-size">
+                <input type="text" class="input-value" placeholder="Input size value" onchange="changeGrid(this.value)">
+                <div class="error-message"></div>
+                <button class="btn btn-primary">Set Size</button>
+            </div>
+            <button class="btn btn-reset" onclick="resetBoard()">Reset</button>
+        </div>
+        <div class="content-wrapper">
+            <div class="board"></div>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="color('black')">Black</button>
+                <button class="btn btn-primary" onclick="color('gray')">Gray</button>
+                <button class="btn btn-primary" onclick="color('random')">Random</button>
+                <button class="btn btn-reset" onclick="color('white')">Eraser</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          beinawair
+        </p>
+        <a href="https://github.com/beinawair" target="_blank">
+          <i class="fab fa-github"></i
+        ></a>
+      </footer>
+    
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

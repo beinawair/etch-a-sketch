@@ -1,0 +1,131 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    padding: 2rem 6rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(45deg, rgb(255, 132, 132), rgb(158, 138, 199));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 2em;
+}
+
+.set-size {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.set-size .input-value {
+    border: none;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: .5em 2em;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(.9);
+}
+
+btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    animation: bounceMove .3s ease-in-out;
+}
+
+@keyframes bounceMove {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+.btn-primary {
+    background-color: rgb(158, 138, 199);
+    color: white;
+}
+
+.btn-reset {
+    background-color: rgb(255, 132, 132);
+    color: white;
+}
+
+.error-message {
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    margin-bottom: 1em;
+    color: red;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.content-wrapper {
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.board {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    padding: 15px;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, .2);
+    background-color: rgb(227, 227, 227);
+    margin-bottom: 2em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.square {
+    background-color: white;
+    /* border: .2px solid rgb(245, 245, 245); */
+}
+
+.footer {
+    text-align: center;
+}
