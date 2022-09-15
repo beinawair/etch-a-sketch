@@ -98,6 +98,7 @@ btn:active {
 .content-wrapper {
     padding: 0 1em;
     display: flex;
+    gap: 2em;
     justify-content: center;
     flex-direction: row-reverse;
 }
@@ -117,10 +118,20 @@ btn:active {
 .buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
+
+.buttons > button {
+    margin-bottom: 1em;
+}
+
+.buttons > h2 {
+    font-size: 24px;
+    color: rgb(82, 82, 82);
+}
+
 .square {
     background-color: white;
     /* border: .2px solid rgb(245, 245, 245); */
